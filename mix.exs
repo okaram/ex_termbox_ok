@@ -3,8 +3,8 @@ defmodule ExTermbox.Mixfile do
 
   def project do
     [
-      app: :ex_termbox,
-      version: "1.0.2",
+      app: :ex_termbox_ok,
+      version: "1.0.3",
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
       compilers: [:elixir_make | Mix.compilers()],
@@ -16,8 +16,8 @@ defmodule ExTermbox.Mixfile do
       aliases: aliases(),
 
       # Docs
-      name: "ExTermbox",
-      source_url: "https://github.com/ndreynolds/ex_termbox",
+      name: "ExTermboxOk",
+      source_url: "https://github.com/okaram/ex_termbox_ok",
       docs: [
         extras: ["README.md"]
       ]
@@ -32,15 +32,15 @@ defmodule ExTermbox.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:elixir_make, "~> 0.6", runtime: false},
-      {:ex_doc, "~> 0.19", only: :dev, runtime: false},
+      {:elixir_make, "~> 0.9", runtime: false},
+      {:ex_doc, "~> 0.38", only: :dev, runtime: false},
       {:dialyze, "~> 0.2.0", only: :dev},
-      {:credo, "~> 1.0", only: [:dev, :test], runtime: false}
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false}
     ]
   end
 
   defp description do
-    "Termbox bindings for Elixir"
+    "Termbox bindings for Elixir (fixex by Orlando Karam, June 2025)"
   end
 
   defp package do
@@ -57,9 +57,9 @@ defmodule ExTermbox.Mixfile do
         README.md
         LICENSE
       ),
-      maintainers: ["Nick Reynolds"],
+      maintainers: ["Orlando Karam, (created by  Nick Reynolds)"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/ndreynolds/ex_termbox"}
+      links: %{"GitHub" => "https://github.com/okaram/ex_termbox_ok"}
     ]
   end
 

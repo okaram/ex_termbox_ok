@@ -24,7 +24,7 @@ NIF_CFLAGS += -I$(ERTS_INCLUDE_DIR) -I$(TERMBOX_PATH)/src
 SOURCES = c_src/termbox_bindings.c $(TERMBOX_BUILD)/src/libtermbox.a
 
 calling_from_make:
-	mix compile
+	mix deps.get && mix compile
 
 all: $(PREFIX)/termbox_bindings.so
 	@:
