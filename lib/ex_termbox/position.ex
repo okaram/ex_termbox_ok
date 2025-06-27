@@ -62,3 +62,29 @@ defmodule ExTermbox.Position do
   @spec translate_y(t, integer) :: t
   def translate_y(%Position{} = pos, dy), do: translate(pos, 0, dy)
 end
+
+
+defmodule ExTermbox.Cell do
+  @moduledoc """
+  Represents a termbox cell, a character at a position, along with the cell's
+  background and foreground colors.
+  """
+
+  alias __MODULE__, as: Cell
+  alias ExTermbox.{Constants, Position}
+
+  @type t :: %__MODULE__{
+          position: Position.t(),
+          ch: non_neg_integer()
+        }
+
+  @enforce_keys [:position, :ch]
+  defstruct position: nil,
+            ch: nil,
+            bg: Constants.colors().default,
+            fg: Constants.colors().default
+
+  def empty do
+    %Cell{position: nil, ch: nil}
+  end
+end
