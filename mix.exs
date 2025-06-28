@@ -4,7 +4,7 @@ defmodule ExTermbox.Mixfile do
   def project do
     [
       app: :ex_termbox_ok,
-      version: "1.0.3",
+      version: "1.0.4",
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
       compilers: [:elixir_make | Mix.compilers()],
@@ -16,7 +16,7 @@ defmodule ExTermbox.Mixfile do
       aliases: aliases(),
 
       # Docs
-      name: "ExTermboxOk",
+      name: "ExTermbox",
       source_url: "https://github.com/okaram/ex_termbox_ok",
       docs: [
         extras: ["README.md"]

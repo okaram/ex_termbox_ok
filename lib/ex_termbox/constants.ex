@@ -4,8 +4,8 @@ defmodule ExTermbox.Constants do
   formatting attributes or to identify keys passed in an event.
   """
 
-  use Bitwise, only_operators: true
-
+#  use Bitwise, only_operators: true
+  import Bitwise
   @type constant :: integer
 
   @type key :: constant

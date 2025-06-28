@@ -69,7 +69,7 @@ defmodule ExTermbox.Bindings do
 
   """
 
-  alias ExTermbox.{Cell, Constants, Position}
+  alias ExTermbox.{Position,Cell, Constants}
 
   @on_load :load_nifs
 

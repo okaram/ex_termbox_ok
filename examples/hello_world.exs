@@ -23,11 +23,11 @@ alias ExTermbox.{Cell, EventManager, Event, Position}
 #
 # The `ch` should be an integer representing the character (e.g., ?a or 97).
 # In the example, we're using charlists for this reason.
-for {ch, x} <- Enum.with_index('Hello, World!') do
+for {ch, x} <- Enum.with_index(~c"Hello, World!") do
   :ok = Termbox.put_cell(%Cell{position: %Position{x: x, y: 0}, ch: ch})
 end
 
-for {ch, x} <- Enum.with_index('(Press <q> to quit)') do
+for {ch, x} <- Enum.with_index(~c"(Press <q> to quit)") do
   :ok = Termbox.put_cell(%Cell{position: %Position{x: x, y: 2}, ch: ch})
 end
 
@@ -40,3 +40,6 @@ receive do
     :ok = EventManager.stop()
     :ok = Termbox.shutdown()
 end
+
+IO.inspect(ExTermbox.__info__(:module))
+#IO.inspect(Termbox.__info__(:functions))
