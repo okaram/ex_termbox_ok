@@ -16,7 +16,7 @@ defmodule ExTermbox.Mixfile do
       aliases: aliases(),
 
       # Docs
-      name: "ExTermbox",
+      name: "ExTermboxOk",
       source_url: "https://github.com/okaram/ex_termbox_ok",
       docs: [
         extras: ["README.md"]

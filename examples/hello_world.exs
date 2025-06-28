@@ -40,6 +40,3 @@ receive do
     :ok = EventManager.stop()
     :ok = Termbox.shutdown()
 end
-
-IO.inspect(ExTermbox.__info__(:module))
-#IO.inspect(Termbox.__info__(:functions))
