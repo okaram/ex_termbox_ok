@@ -1,10 +1,12 @@
-# ExTermbox
 
-[![Hex.pm](https://img.shields.io/hexpm/v/ex_termbox.svg)](https://hex.pm/packages/ex_termbox)
+# Ex_Termbox_ok
+**This is a fork of ex_termbox, fixing the build. Will try to improve and maintain**
+
+[![Hex.pm](https://img.shields.io/hexpm/v/ex_termbox.svg)](https://hex.pm/packages/ex_termbox_ok)
 [![Hexdocs.pm](https://img.shields.io/badge/api-hexdocs-brightgreen.svg)](https://hexdocs.pm/ex_termbox)
 [![Travis CI](https://img.shields.io/travis/ndreynolds/ex_termbox/master.svg)](https://travis-ci.org/ndreynolds/ex_termbox)
 
-Low-level [termbox](https://github.com/nsf/termbox) bindings for Elixir.
+Low-level [termbox](https://github.com/okaram/termbox-ok) bindings for Elixir.
 
 For high-level, declarative terminal UIs in Elixir, see
 [Ratatouille](https://github.com/ndreynolds/ratatouille). It builds on top of

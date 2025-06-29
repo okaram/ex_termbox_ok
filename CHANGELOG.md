@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.4] - 2025-06-28
+### Changed
+  - Way NIF loads to allow use in scripts (.exs)
+  - Firs release by Orlando Karam
+### Fixed
+  - Compilation errors coming from termbox by replacing with termbox_ok
+
 ## [1.0.2] - 2020-03-24
 ### Fixed
 - Compilation errors with 1.0.1 tar (reverted) due to bad file permissions.
